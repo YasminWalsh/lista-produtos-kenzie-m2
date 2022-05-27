@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Lista de Produtos</title>
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <h3>Compre agora</h3>
+        <section id="filters" class="filtersContainer">
+            <div class="botoesFiltro">
+                <button class="estiloGeralBotoes select"  data-secao="Todos" id="botaoTodos" >Todos</button>
+                <button class="estiloGeralBotoes"  data-secao="Laticínio" id="botaoLaticínios" >Laticínio</button>
+                <button class="estiloGeralBotoes " data-secao="Panificadora" id="botaoPanificadora" >Panificadora</button>
+                <button class="estiloGeralBotoes " data-secao="Hortifruti" id="botaoHortifruti">Hortifruti</button>
+            </div>
+            <div class="containerBuscaPorNome">
+                
+                <input type="text" placeholder="Nome do produto" id="campoBuscaPorNome" >
+                <button id="botaoBusca"><img id= "lupa" src="./src/img/lupa.png" alt="lupa"></button>
+
+            </div>
+        </section>
+    </header>
+    
+    <main>
+        <div class="containerPrecoTotal">
+            <p>Valor total dos produtos da seção</p>
+            <p class="Total">R$<span id="precoTotal"></span>,00</p>
+        </div>
+
+        <section class="containerListaProdutos" id="listProdutos">
+            <ul>
+           <!-- Lista dos produtos por DOM -->
+            </ul>
+        </section>
+
+        
+    </main>
+
+    <script src="src/js/dataProdutos.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
